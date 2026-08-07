@@ -1,0 +1,15 @@
+# @package _global_
+defaults:
+  - override /model: bio_oncograph
+  - override /dataset: tcga_multimodal
+
+experiment_name: full_pipeline
+model:
+  name: BioOncoGraph
+  use_topopool: true
+  multimodal: true
+  encoder: uni
+task: survival
+training:
+  epochs: 200
+  learning_rate: 0.0001

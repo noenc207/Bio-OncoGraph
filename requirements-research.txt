@@ -1,0 +1,10 @@
+-r requirements.txt
+jupyterlab
+matplotlib
+seaborn
+plotly
+umap-learn
+captum
+optuna
+wandb
+mlflow

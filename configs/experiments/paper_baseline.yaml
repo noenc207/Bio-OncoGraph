@@ -1,0 +1,13 @@
+# @package _global_
+defaults:
+  - override /model: clam
+  - override /dataset: tcga
+
+experiment_name: baseline_clam
+model:
+  name: CLAM
+  hidden_dim: 256
+  dropout: 0.25
+training:
+  epochs: 100
+  learning_rate: 0.0001

@@ -1,0 +1,14 @@
+# Bio-OncoGraph Model Configuration
+# Structured Config: bio_oncograph.core.config.ModelConfig
+
+in_channels: 1024       # UNI v1 feature dimension
+hidden_dim: 256
+num_phenotypes: 8
+num_relations: 4
+pool_ratios: [0.5, 0.25]
+num_mp_layers: 2
+heads: 4
+dropout: 0.1
+time_bins: 4
+tau_phenograph: 1.0
+tau_topopool: 1.0

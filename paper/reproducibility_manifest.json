@@ -1,0 +1,20 @@
+{
+    "manifest_version": "1.0",
+    "reproducibility_level": "full",
+    "environment": {
+        "python_version": "3.x",
+        "os": "windows"
+    },
+    "artifacts": [
+        "main.tex",
+        "abstract.tex",
+        "introduction.tex",
+        "methods.tex",
+        "results.tex",
+        "discussion.tex",
+        "limitations.tex",
+        "conclusion.tex",
+        "appendix.tex",
+        "references.bib"
+    ]
+}

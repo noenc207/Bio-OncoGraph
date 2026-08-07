@@ -1,0 +1,8 @@
+name: multimodal_transformer
+wsi_input_dim: 1024
+clinical_input_dim: 128
+hidden_dim: 512
+num_layers: 4
+num_heads: 8
+dropout: 0.1
+fusion_method: cross_attention

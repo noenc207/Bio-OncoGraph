@@ -1,0 +1,13 @@
+# @package _global_
+defaults:
+  - override /model: bio_oncograph
+  - override /dataset: tcga_survival
+
+experiment_name: survival_analysis
+task: survival
+model:
+  name: BioOncoGraph
+  loss_function: nll_surv
+training:
+  epochs: 100
+  learning_rate: 0.00005

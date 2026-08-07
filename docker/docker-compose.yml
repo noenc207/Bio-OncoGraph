@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  cpu-app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ../data:/app/data
+
+  gpu-app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.cuda
+    volumes:
+      - ../data:/app/data
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

@@ -1,0 +1,24 @@
+include: default.yaml
+
+api:
+  debug: true
+  reload: true
+  workers: 1
+
+logging:
+  level: DEBUG
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s [in %(pathname)s:%(lineno)d]"
+  console: true
+
+database:
+  host: localhost
+  name: biooncograph_dev
+
+neo4j:
+  uri: bolt://localhost:7687
+  user: neo4j
+  database: neo4j
+
+models:
+  device: cpu
+  use_mock: true

@@ -1,0 +1,7 @@
+# CalTopoSurv Loss Configuration
+# Structured Config: bio_oncograph.core.config.LossConfig
+
+alpha: 1.0
+beta: 0.5
+num_projections: 50
+epsilon: 1.0e-8

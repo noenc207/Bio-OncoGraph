@@ -1,0 +1,9 @@
+name: tcga_brca
+data_path: D:/Bio-OncoGraph/data/tcga_brca
+patch_size: 256
+magnification: 20x
+features_dir: D:/Bio-OncoGraph/data/tcga_brca/features
+wsi_dir: D:/Bio-OncoGraph/data/tcga_brca/wsi
+clinical_data_path: D:/Bio-OncoGraph/data/tcga_brca/clinical/nationwidechildrens.org_clinical_patient_brca.txt
+num_classes: 2
+cv_folds: 5

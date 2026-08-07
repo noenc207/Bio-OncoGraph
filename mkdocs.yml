@@ -1,0 +1,11 @@
+site_name: Bio-OncoGraph
+site_url: https://example.com/bio-oncograph
+site_description: Oncology Graph Construction and Analysis
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Quickstart: quickstart.md
+  - API Reference: api/index.md
+  - Tutorials: tutorials/index.md

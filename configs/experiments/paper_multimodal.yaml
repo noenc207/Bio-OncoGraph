@@ -1,0 +1,16 @@
+# @package _global_
+defaults:
+  - override /model: bio_oncograph
+  - override /dataset: tcga_multimodal
+
+experiment_name: multimodal_fusion
+model:
+  name: BioOncoGraph
+  multimodal: true
+  modalities:
+    - histology
+    - genomics
+  fusion_type: attention
+training:
+  epochs: 150
+  learning_rate: 0.0002

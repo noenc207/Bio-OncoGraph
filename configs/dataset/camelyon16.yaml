@@ -1,0 +1,9 @@
+name: camelyon16
+data_path: D:/Bio-OncoGraph/data/camelyon16
+patch_size: 256
+magnification: 20x
+features_dir: D:/Bio-OncoGraph/data/camelyon16/features
+wsi_dir: D:/Bio-OncoGraph/data/camelyon16/wsi
+clinical_data_path: null
+num_classes: 2
+cv_folds: 3

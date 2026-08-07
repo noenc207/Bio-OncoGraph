@@ -1,0 +1,13 @@
+# @package _global_
+defaults:
+  - override /model: graphsage
+  - override /dataset: tcga
+
+experiment_name: reproduction_graphsage
+model:
+  name: GraphSAGE
+  hidden_dim: 256
+  layers: 3
+training:
+  epochs: 100
+  learning_rate: 0.001

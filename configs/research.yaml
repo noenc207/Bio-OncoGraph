@@ -1,0 +1,32 @@
+include: default.yaml
+
+api:
+  debug: true
+  workers: 2
+  timeout: 600
+
+logging:
+  level: INFO
+  console: true
+
+database:
+  host: research-db
+  name: biooncograph_research
+
+neo4j:
+  uri: bolt://research-graph:7687
+
+models:
+  device: cuda
+  batch_size: 16
+  precision: float32
+  experimental_features: true
+  checkpoint_dir: /opt/biooncograph/experiments/checkpoints
+
+evaluation:
+  metrics:
+    - accuracy
+    - f1
+    - roc_auc
+  save_results: true
+  results_dir: /opt/biooncograph/experiments/results

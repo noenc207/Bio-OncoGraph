@@ -1,0 +1,17 @@
+# @package _global_
+defaults:
+  - override /dataset: tcga_brca
+  - override /model: multimodal_transformer
+  - override /training: default
+
+seed: 42
+tags: ["tcga_brca", "multimodal", "transformer"]
+
+training:
+  batch_size: 4
+  max_epochs: 150
+  optimizer:
+    lr: 0.00005
+
+model:
+  hidden_dim: 1024

@@ -1,0 +1,28 @@
+include: default.yaml
+
+api:
+  host: 0.0.0.0
+  port: 8080
+  debug: false
+  workers: 8
+  timeout: 120
+
+logging:
+  level: WARNING
+  file: /var/log/biooncograph/app.log
+  json_format: true
+
+database:
+  host: db.internal.production
+  port: 5432
+  pool_size: 50
+  ssl_mode: verify-full
+
+neo4j:
+  uri: neo4j+s://graph.internal.production:7687
+  user: production_user
+
+models:
+  device: cuda
+  batch_size: 32
+  precision: float16

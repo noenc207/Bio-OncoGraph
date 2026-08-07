@@ -1,0 +1,12 @@
+{
+    "has_title": true,
+    "has_abstract": true,
+    "has_introduction": true,
+    "has_methods": true,
+    "has_results": true,
+    "has_discussion": true,
+    "has_limitations": true,
+    "has_conclusion": true,
+    "has_references": true,
+    "has_appendix": true
+}

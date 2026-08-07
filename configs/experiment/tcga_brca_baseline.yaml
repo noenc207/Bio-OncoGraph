@@ -1,0 +1,17 @@
+# @package _global_
+defaults:
+  - override /dataset: tcga_brca
+  - override /model: gat_baseline
+  - override /training: default
+
+seed: 12345
+tags: ["tcga_brca", "baseline", "gat"]
+
+training:
+  batch_size: 2
+  max_epochs: 50
+  optimizer:
+    lr: 0.0002
+
+model:
+  dropout: 0.3

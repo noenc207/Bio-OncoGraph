@@ -1,0 +1,27 @@
+database:
+  host: localhost
+  port: 5432
+  name: biooncograph
+  user: postgres
+  pool_size: 10
+
+api:
+  host: 0.0.0.0
+  port: 8000
+  debug: false
+  workers: 4
+
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: logs/biooncograph.log
+
+models:
+  path: /opt/biooncograph/models
+  cache_dir: /opt/biooncograph/cache
+  device: cpu
+
+neo4j:
+  uri: bolt://localhost:7687
+  user: neo4j
+  database: biooncograph

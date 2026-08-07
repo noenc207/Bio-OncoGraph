@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Contributors"
+    given-names: "BioOncoGraph"
+title: "BioOncoGraph: A Comprehensive Biomedical Knowledge Graph Framework for Oncology"
+version: 2.0.0
+date-released: 2026-08-07
+url: "https://github.com/bio-oncograph/bio-oncograph"

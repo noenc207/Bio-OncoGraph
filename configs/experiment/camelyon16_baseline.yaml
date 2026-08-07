@@ -1,0 +1,19 @@
+# @package _global_
+defaults:
+  - override /dataset: camelyon16
+  - override /model: gat_baseline
+  - override /training: default
+
+seed: 9876
+tags: ["camelyon16", "baseline"]
+
+dataset:
+  patch_size: 512
+  magnification: 40x
+
+training:
+  batch_size: 1
+  max_epochs: 80
+  num_workers: 8
+  optimizer:
+    lr: 0.0001

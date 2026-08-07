@@ -1,0 +1,13 @@
+# @package _global_
+defaults:
+  - override /model: bio_oncograph
+  - override /dataset: tcga
+
+experiment_name: ablation_no_topopool
+model:
+  name: BioOncoGraph
+  use_topopool: false
+  gnn_layers: 3
+training:
+  epochs: 100
+  learning_rate: 0.0001

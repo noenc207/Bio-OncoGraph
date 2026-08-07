@@ -1,0 +1,12 @@
+defaults:
+  - _self_
+  - dataset: tcga_brca
+  - model: gat_baseline
+  - training: default
+  - experiment: null
+
+work_dir: ${hydra:runtime.cwd}
+data_dir: ${work_dir}/data
+log_dir: ${work_dir}/logs
+
+seed: 42

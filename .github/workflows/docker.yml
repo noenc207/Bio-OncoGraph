@@ -1,0 +1,17 @@
+name: Docker Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build CPU image
+      run: docker build -t bio-oncograph:cpu -f docker/Dockerfile .
+    - name: Build GPU image
+      run: docker build -t bio-oncograph:gpu -f docker/Dockerfile.cuda .
